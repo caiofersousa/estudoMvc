@@ -140,10 +140,11 @@ public class JfrmCliente extends javax.swing.JFrame {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, comprasList, org.jdesktop.beansbinding.ObjectProperty.create(), jTextField13, org.jdesktop.beansbinding.BeanProperty.create("text"));
         bindingGroup.addBinding(binding);
 
+        jTable2.setAutoCreateColumnsFromModel(false);
+
         org.jdesktop.swingbinding.JTableBinding jTableBinding = org.jdesktop.swingbinding.SwingBindings.createJTableBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, comprasList, jTable2);
         bindingGroup.addBinding(jTableBinding);
         jTableBinding.bind();
-
         jScrollPane2.setViewportView(jTable2);
 
         javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
@@ -297,9 +298,6 @@ public class JfrmCliente extends javax.swing.JFrame {
 
         jTextField8.setFont(new java.awt.Font("Verdana", 1, 15)); // NOI18N
 
-        jTableBinding = org.jdesktop.swingbinding.SwingBindings.createJTableBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, new java.util.List(), jTable1);
-        bindingGroup.addBinding(jTableBinding);
-        jTableBinding.bind();
         jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
@@ -490,12 +488,12 @@ public class JfrmCliente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.persistence.EntityManager ProjetoMVCPUEntityManager;
-    private java.util.List<br.com.turingBits.view.Cliente> clienteList;
-    private java.util.List<br.com.turingBits.view.Cliente> clienteList1;
+    private java.util.List<br.com.turingBits.model.Cliente> clienteList;
+    private java.util.List<br.com.turingBits.model.Cliente> clienteList1;
     private javax.persistence.Query clienteQuery;
     private javax.persistence.Query clienteQuery1;
     private javax.persistence.Query clienteQuery2;
-    private java.util.List<br.com.turingBits.view.Compras> comprasList;
+    private java.util.List<br.com.turingBits.model.Compras> comprasList;
     private javax.persistence.Query comprasQuery;
     private javax.persistence.Query comprasQuery1;
     private javax.swing.JButton jButton1;

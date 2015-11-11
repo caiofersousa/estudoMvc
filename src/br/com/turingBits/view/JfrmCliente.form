@@ -22,7 +22,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.view.Cliente&gt;"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.model.Cliente&gt;"/>
       </AuxValues>
     </Component>
     <Component class="javax.persistence.Query" name="clienteQuery1">
@@ -41,7 +41,7 @@
         <Property name="observable" type="boolean" value="true"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.view.Cliente&gt;"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.model.Cliente&gt;"/>
       </AuxValues>
     </Component>
     <Component class="javax.persistence.Query" name="comprasQuery">
@@ -60,7 +60,7 @@
         <Property name="observable" type="boolean" value="true"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.view.Compras&gt;"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;br.com.turingBits.model.Compras&gt;"/>
       </AuxValues>
     </Component>
     <Component class="javax.persistence.Query" name="comprasQuery1">
@@ -379,6 +379,9 @@
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
                 <Component class="javax.swing.JTable" name="jTable2">
+                  <Properties>
+                    <Property name="autoCreateColumnsFromModel" type="boolean" value="false"/>
+                  </Properties>
                   <BindingProperties>
                     <BindingProperty name="elements" source="comprasList" target="jTable2" targetPath="elements" updateStrategy="0" immediately="true"/>
                   </BindingProperties>
@@ -700,9 +703,6 @@
                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                     </Property>
                   </Properties>
-                  <BindingProperties>
-                    <BindingProperty name="elements" source="clienteList2" target="jTable1" targetPath="elements" updateStrategy="0" immediately="true"/>
-                  </BindingProperties>
                 </Component>
               </SubComponents>
             </Container>

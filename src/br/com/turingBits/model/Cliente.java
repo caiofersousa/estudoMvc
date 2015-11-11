@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.turingBits.view;
+package br.com.turingBits.model;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
